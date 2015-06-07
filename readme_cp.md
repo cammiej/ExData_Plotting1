@@ -6,3 +6,4 @@ This is my submission for the first course project in Exploratory Data Analysis 
 * plot3.R and plot3.png
 * plot4.R and plot4.png
 
+changed the code to create directory if doesn't exist in a users download directory.  I expect the code to run on any mac for sure.  (Originally, had my directory)
