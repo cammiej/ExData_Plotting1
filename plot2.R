@@ -1,7 +1,8 @@
-setwd("/Users/cdentremontparte/Downloads/DataScience")
+setwd("~/Downloads")
+if(!file.exists("./DataScience")){dir.create("./DataScience")}
+setwd("./DataScience")
 library(dplyr)
 library(lubridate)
-library(ggplot)
 # load data from Electric Power, filter for 2007-02-01 and 2007-02-02 on load
 feb07pwr <- filter(read.table("/Users/cdentremontparte/Downloads/household_power_consumption.txt", header = TRUE, sep = ";", colClasses = "character"), Date == "2/2/2007" | Date == "1/2/2007")
 # convert Date and Time variables to Date/Time classes - added a column instead
